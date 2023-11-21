@@ -4,7 +4,7 @@
 	const categories = ['All', 'Work', 'Personal', 'Shopping', 'Misc'];
 </script>
 
-<div class="p-2 h-1/6 gap-8 flex flex-row justify-between overflow-box">
+<div class="p-2 h-32 gap-8 flex flex-row justify-between overflow-box">
 	{#each categories as category}
 		<CategoryCard {category} />
 	{/each}
