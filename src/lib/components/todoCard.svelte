@@ -1,5 +1,8 @@
 <script lang="ts">
-	export let todo: { title: string; completed: boolean; id: string };
+	import type Todo from '$lib/models/todo';
+
+	export let todo: Todo;
+	export let position: number;
 </script>
 
 <a
@@ -8,9 +11,9 @@
 >
 	<div class="flex flex-col">
 		<div class="text-xl">{todo.title}</div>
-		<div class="text-sm">{todo.completed ? 'Completed' : 'Not completed'}</div>
+		<div class="text-sm">{todo.isComplete ? 'Completed' : 'Not completed'}</div>
 	</div>
 	<div class="flex flex-col">
-		<div class="text-xl">{todo.id}</div>
+		<div class="text-xl">{position}</div>
 	</div>
 </a>

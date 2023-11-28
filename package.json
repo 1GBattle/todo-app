@@ -25,5 +25,11 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"firebase": "^10.6.0",
+		"moment": "^2.29.4",
+		"momentjs": "^2.0.0",
+		"uuidjs": "^5.0.1"
+	}
 }
